@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Fildset & Legend Tag</title>
+        <style>
+             form{
+                    width: 700px;
+                    border: 1px solid #ccc;
+                    border-radius: 8px;
+                    background-color: #e9ecef;
+                    margin: auto;       
+                    padding: 20px;
+                    }
+
+                    h1{
+                        text-align: center;
+                     }
+                    fieldset{
+                            width: 500px;
+                            margin: auto; 
+                            text-align: center;               
+                            }
+                     label{
+                            text-decoration: underline;
+                            }
+                     #vigh{
+                
+                            margin: auto; 
+                            text-align: left;
+                            }
+                    .Sandy{
+                            margin: auto; 
+                            text-align: left;
+                            }             
+        </style>
+    </head>
+    <body>
+        <form   action="account.html"
+                target="_blank">
+            <fieldset>                  
+                <legend><b>Academic Information</b></legend>
+                <div id="vigh"> 
+                    <label for="enumber"><b>Enrollment Number:</b></label>
+                    <input type="text" name="enumber" id="enumber"
+                            pattern="[0-9]{8,10}"
+                            maxlength="10"
+                            required><br><br>
+                  
+                    <label for="sid"><b>Student ID:</b></label>
+                    <input type="text" name="sid" id="sid"
+                            pattern="[0-9]{8,10}"
+                            maxlength="10"
+                            required><br><br>
+
+                    <label for="CourseName"><b>Course Name:</b></label>
+                    <input type="text" name="CourseName" id="CourseName" 
+                            pattern="[A-Za-z ]+"
+                            required><br><br>
+
+                    <label for="Department"><b>Department:</b></label>
+                    <input type="text" name="Department" id="Department"
+                            pattern="[A-Za-z ]+"
+                            required><br><br>
+
+                    <label for="cys"><b>Current Year / Semester:</b></label>
+                    <input type="text" name="cys" id="cys"
+                            required><br><br>
+           
+                    <label for="psc"><b>Previous School/College:</b></label>
+                    <input type="text" name="psc" id="psc"
+                            pattern="[A-Za-z ]+"
+                            required> <br><br>                
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend><b>Parent / Guardian Information</b></legend>
+                <div class="Sandy"></div>     
+
+                    <label for="fname"><b>Father Name:</b></label>
+                    <input type="text" name="fname" id="fname"
+                            required><br><br>
+
+                    <label for="mname"><b>Mother Name:</b></label>
+                    <input type="text" name="mname" id="mname"
+                            required><br><br>
+
+                    <label for="Occupation"><b>Occupation:</b></label>
+                    <input type="text" name="Occupation" id="Occupation"
+                            required>                  
+                </div>
+            </fieldset>
+
+            <fieldset>
+                    <legend><b>Documents Upload</b></legend>             
+                    <label for="aip"><b>Aadhaar/ID Proof</b></label>
+                    <input type="file" name="aip" id="aip" accept="image/*"
+                            required><br><br>
+             
+                    <label for="pm"><b>Previous Marksheet:</b></label>
+                    <input type="file" name="pm" id="pm" accept="image/*"
+                            required><br><br>
+
+                    <label for="psp"><b>Passport Size Photo:</b></label>
+                    <input type="file" name="psp" id="psp" accept="image/*"
+                            required><br><br>
+
+                <button type="submit"><b>Next</b></button>
+            </fieldset>
+        </form>
+    </body>
+</html>
